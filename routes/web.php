@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\GuestController;
+use App\Http\Controllers\Guest\FilmController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +14,4 @@ use App\Http\Controllers\GuestController;
 |
 */
 
-Route::get('/', [GuestController::class, 'index'])->name('guest.home');
+Route::get('/', [FilmController::class, 'index'])->name('guest.home');
